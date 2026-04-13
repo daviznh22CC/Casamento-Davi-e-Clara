@@ -401,10 +401,7 @@
 </footer>
 
 <script>
-  /**
-   * Formspree: https://formspree.io — crie um formulário gratuito, copie o ID (f/xxxx)
-   * e substitua abaixo. Você recebe cada envio por e-mail e pode ver/exportar CSV no painel.
-   */
+
   const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xpqkzyqv';
 
   async function enviarConfirmacao() {
@@ -426,11 +423,8 @@
       return;
     }
 
-    if (FORMSPREE_ENDPOINT.includes('SEU_ID_DO_FORMULARIO')) {
-      statusEl.textContent = 'Configure o ID do Formspree no arquivo HTML (constante FORMSPREE_ENDPOINT).';
-      statusEl.className = 'rsvp-status erro';
-      return;
-    }
+ 
+    
 
     const presenca = presencaEl.value;
     const adultosTexto = adultos || 'Não informado';
